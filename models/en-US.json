@@ -1,0 +1,36 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"query demo",
+            "types":[],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                    "name":"GetQueryData",
+                    "slots":[
+                        {
+                            "name":"Query",
+                            "type":"AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples":[
+                        "search for {Query} near me",
+                        "find out {Query}",
+                        "search for {Query}"
+                    ]
+                }
+            ]
+        }
+    }
+}
